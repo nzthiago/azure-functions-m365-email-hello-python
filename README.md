@@ -72,6 +72,18 @@ Open the folder in VS Code and accept the workspace recommendations
 
 ---
 
+## Create your `local.settings.json`
+
+This file is gitignored (it can contain secrets). Copy the template:
+
+```bash
+cp local.settings.json.sample local.settings.json
+```
+
+The defaults work for local dev against Azurite. The devtunnel setup script appends any additional settings it needs (extension key, etc.) automatically.
+
+---
+
 ## Step 0 — Install the `connector-namespace` CLI extension (once)
 
 ```bash
