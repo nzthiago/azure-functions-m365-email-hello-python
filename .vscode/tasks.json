@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "func",
+      "label": "func: host start",
+      "command": "host start",
+      "isBackground": true,
+      "problemMatcher": "$func-python-watch",
+      "options": {
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/.venv/lib/python3.13/site-packages"
+        }
+      }
+    }
+  ]
+}

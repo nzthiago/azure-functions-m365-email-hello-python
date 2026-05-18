@@ -1,0 +1,60 @@
+# Azure Functions local settings file (contains secrets — never commit)
+local.settings.json
+
+# Local environment overrides (used by test.http via {{$dotenv ...}})
+.env
+
+# Python byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# MyPy / Pyright type-checking caches
+.mypy_cache/
+.dmypy.json
+.pyright/
+
+# pytest
+.pytest_cache/
+.cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/launch.json.user
+
+# Azure Functions publish output
+.python_packages/
+
+# macOS metadata
+.DS_Store
+Thumbs.db
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Node (in case tools installed locally)
+node_modules/
