@@ -72,15 +72,17 @@ Open the folder in VS Code and accept the workspace recommendations
 
 ---
 
-## Create your `local.settings.json`
+## Create your local config files
 
-This file is gitignored (it can contain secrets). Copy the template:
+Two files are gitignored (they can contain secrets). Copy the templates:
 
 ```bash
 cp local.settings.json.sample local.settings.json
+cp .env.sample .env
 ```
 
-The defaults work for local dev against Azurite. The devtunnel setup script appends any additional settings it needs (extension key, etc.) automatically.
+- **`local.settings.json`** — Functions host settings. Defaults work for local dev against Azurite. The devtunnel setup script appends any additional settings it needs (extension key, etc.) automatically.
+- **`.env`** — used by [`test.http`](test.http) via the REST Client extension's `{{$dotenv VAR}}` syntax. Edit it after you run the setup script to set `HTTP_POST_CODE` (the function key).
 
 ---
 
